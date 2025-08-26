@@ -7,12 +7,19 @@
   <meta name="description" content="صفحة الدعم لتطبيق هالة: تواصل، أسئلة شائعة، سياسة الخصوصية." />
   <style>
     :root{
-      --navy:#14123A; --gray:#DFDFDF; --lav:#8575B6; --ink:#202022; --bg:#ffffff;
+      --navy:#14123A; --gray:#DFDFDF; --lav:#8575B6; --ink:#202022; --bg:#14123A;
       --radius:16px; --shadow:0 8px 24px rgba(20,18,58,.08);
       --maxw:860px;
     }
     *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Arial,"Noto Sans Arabic",sans-serif}
+    html,body{
+      margin:0;padding:0;color:var(--ink);
+      font:16px/1.6 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Arial,"Noto Sans Arabic",sans-serif;
+      /* Navy → Purple gradient background */
+      background:
+        radial-gradient(1200px 600px at 10% 0%, rgba(133,117,182,.35), rgba(20,18,58,1) 45%),
+        linear-gradient(180deg, #14123A 0%, #14123A 100%);
+    }
     a{color:var(--navy);text-decoration:none;border-bottom:1px solid rgba(20,18,58,.2)}
     a:hover{border-bottom-color:var(--navy)}
     header{background:var(--navy);color:#fff;padding:18px 0}
@@ -31,7 +38,7 @@
     ul{margin:8px 0 0 0;padding:0 0 0 18px}
     .muted{color:#666;font-size:14px}
     .badge{display:inline-block;background:var(--lav);color:#fff;border-radius:999px;padding:2px 10px;font-size:12px;margin-inline-start:6px}
-    footer{padding:24px 0;color:#666;border-top:1px solid #eee;margin-top:24px}
+    footer{padding:24px 0;color:#666;border-top:1px solid #eee;margin-top:24px;background:rgba(255,255,255,.7)}
     /* Lang sections */
     .lang{display:none}
     .lang.show{display:block}
@@ -65,7 +72,7 @@
         <h1>الدعم – تطبيق هالة <span class="badge">رسمي</span></h1>
         <p>مرحبًا! هذه صفحة الدعم الرسمية لتطبيق <strong>هالة</strong>. إن احتجت أي مساعدة، تواصل معنا وسنرجع لك في أقرب وقت.</p>
         <h2>التواصل</h2>
-        <p>البريد: <a href="mailto:support@yourdomain.com">support@yourdomain.com</a></p>
+        <p>البريد: <a href="mailto:mrnawafalk@gmail.com">mrnawafalk@gmail.com</a></p>
         <p class="muted">أوقات الرد: 10 ص – 6 م (توقيت السعودية) – أيام العمل.</p>
       </div>
 
@@ -74,16 +81,15 @@
           <h2>مشاكل شائعة (حلول سريعة)</h2>
           <ul>
             <li><strong>الميكروفون لا يعمل</strong> → الإعدادات &gt; الخصوصية &gt; الميكروفون &gt; فعّل <em>هالة</em>.</li>
-            <li><strong>الإشعارات لا تصل</strong> → الإعدادات &gt; الإشعارات &gt; هالة &gt; السماح بالإشعارات.</li>
-            <li><strong>جلسات التركيز لا تبدأ</strong> → تأكد من تفعيل “عدم الإزعاج”/التركيز حسب الإعدادات، وجرب إعادة فتح التطبيق.</li>
-            <li><strong>المهام لا تتزامن</strong> → حدّث التطبيق ثم أعِد المحاولة.</li>
+            <li><strong>جلسات التركيز لا تبدأ</strong> → تأكد من إعدادات “التركيز/عدم الإزعاج”، ثم أعِد فتح التطبيق.</li>
+            <li><strong>المهام/الإحصائيات لا تتحدّث</strong> → حدّث التطبيق ثم أعِد المحاولة.</li>
           </ul>
         </div>
         <div>
           <h2>عن التطبيق (مختصر)</h2>
           <ul>
             <li>اختيار المزاج بأسلوب الكواكب.</li>
-            <li>مذكّرات مشاعر سريعة (عربي/إنجليزي).</li>
+            <li>مذكّرات مشاعر سريعة.</li>
             <li>تمارين تنفّس قصيرة لإعادة التوازن.</li>
             <li><strong>مساعد التركيز</strong> (جلسات عمل بنمط بومودورو مع فترات راحة).</li>
             <li><strong>قائمة المهام</strong> اليومية مع علامات إنجاز.</li>
@@ -107,7 +113,7 @@
         <h1>Halah Support <span class="badge">Official</span></h1>
         <p>Welcome! This is the official support page for <strong>Halah</strong>. If you need help, reach out and we’ll get back to you as soon as possible.</p>
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:support@yourdomain.com">support@yourdomain.com</a></p>
+        <p>Email: <a href="mailto:mrnawafalk@gmail.com">mrnawafalk@gmail.com</a></p>
         <p class="muted">Response hours: 10:00–18:00 (Riyadh time), business days.</p>
       </div>
 
@@ -116,21 +122,21 @@
           <h2>Quick fixes (FAQ)</h2>
           <ul>
             <li><strong>Microphone not working</strong> → Settings &gt; Privacy &amp; Security &gt; Microphone &gt; enable <em>Halah</em>.</li>
-            <li><strong>No notifications</strong> → Settings &gt; Notifications &gt; Halah &gt; Allow.</li>
             <li><strong>Focus sessions won’t start</strong> → Check Focus/Do Not Disturb settings, relaunch the app.</li>
-            <li><strong>Tasks not syncing</strong> → Update the app, then retry.</li>
+            <li><strong>Tasks/insights not updating</strong> → Update the app, then retry.</li>
           </ul>
         </div>
         <div>
           <h2>About the app (at a glance)</h2>
           <ul>
             <li>Planet-based mood picking.</li>
-            <li>Fast mood journaling (AR/EN).</li>
+            <li>Fast mood journaling.</li>
             <li>Short breathing exercises to reset.</li>
             <li><strong>Focus Assist</strong> (Pomodoro-style sessions with breaks).</li>
             <li><strong>To-Do List</strong> with daily checkmarks.</li>
             <li>Monthly insights to spot patterns.</li>
           </ul>
+          <p class="muted">Interface language: Arabic.</p>
         </div>
       </div>
 
